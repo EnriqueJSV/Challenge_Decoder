@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Cambio del titulo de la pagina y conexion con CSS -->
         <title>Encriptador de texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
@@ -11,7 +12,33 @@
 
     <body>
         
-        
+        <!-- Contiene el logo en la parte superior de la pagina -->
+        <header>
+
+            <div>
+                <h1><img src="imagenes/Logo.png"></h1>
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <!-- Contiene el lugar donde el usuario ingresara el texto y botones encriptar y desencriptar -->
+            <section>
+                <textarea placeholder="Ingrese el texto aqui"></textarea>
+                <input type="submit" value="Encriptar">
+                <input type="submit" value="Desencriptar">
+            </section>
+
+            <!-- Contiene el resultado del texto ingresado, la imagen y el texto de no hay mensaje en caso de no haber ningun mensaje -->
+            <section>
+                <img src="imagenes/Muneco.png">
+                <label>Ningun mensaje fue encontrado</label>
+                <label>Ingresa el texto que desea encriptar o desencriptar</label>
+            </section>
+
+        </main>
 
         <script src="script.js"></script>
     </body>
