@@ -1,0 +1,36 @@
+body{
+    background: #D8DFE8;
+}
+
+.logo{
+    margin: 1em 0;
+}
+
+.principal{
+    width: 70%;
+    vertical-align: top;
+    margin: 0 0 0 2em;
+    display: inline-block;
+}
+
+.texto-usuario{
+    margin: 2em 5em;
+}
+
+.resultado{
+    width: 10%;
+    display: inline-block;
+    background: white;
+}
+
+.img-muneco{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: right;
+    margin: 1em 0;
+}

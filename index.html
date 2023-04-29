@@ -15,7 +15,7 @@
         <!-- Contiene el logo en la parte superior de la pagina -->
         <header>
 
-            <h1><img src="imagenes/Logo.png"></h1>
+            <h1 class="logo"><img src="imagenes/Logo.png"></h1>
 
         </header>
 
@@ -23,16 +23,16 @@
         <main>
 
             <!-- Contiene el lugar donde el usuario ingresara el texto y botones encriptar y desencriptar -->
-            <section>
-                <textarea placeholder="Ingrese el texto aqui"></textarea>
+            <section class="principal">
+                <textarea class="texto-usuario" cols="70" rows="20"  placeholder="Ingrese el texto aqui"></textarea>
                 <label>&#128712; Solo letras minusculas y sin tildes</label>
                 <input type="submit" value="Encriptar">
                 <input type="submit" value="Desencriptar">
             </section>
 
             <!-- Contiene el resultado del texto ingresado, la imagen y el texto de no hay mensaje en caso de no haber ningun mensaje -->
-            <section>
-                <img src="imagenes/Muneco.png">
+            <section class="resultado">
+                <img src="imagenes/Muneco.png" class="img-muneco">
                 <label>Ningun mensaje fue encontrado</label>
                 <label>Ingresa el texto que desea encriptar o desencriptar</label>
             </section>
