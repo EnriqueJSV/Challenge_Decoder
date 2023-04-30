@@ -21,6 +21,32 @@ body{
     font-size: 24px;
 }
 
+.aviso{
+    display: block;
+}
+
+.b-encriptar, .b-desencriptar{
+    border-radius: 24px;
+    padding: 24px 24px;
+    width: 328px;
+    height: 67px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0A3871;
+    margin: 1em 12px;
+}
+
+.b-encriptar{
+    background: #0A3871;
+    color: white;
+}
+
+.b-desencriptar{
+    background: #D8DFE8;
+    color: #0A3871;
+    
+}
+
 .resultado{
     width: 10%;
     display: inline-block;
