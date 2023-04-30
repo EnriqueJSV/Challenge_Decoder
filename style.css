@@ -40,7 +40,7 @@ body{
     font-size: 12px;
 }
 
-.b-encriptar, .b-desencriptar{
+.b-encriptar, .b-desencriptar, .b-copiar{
     border-radius: 24px;
     padding: 24px 24px;
     width: 328px;
@@ -67,10 +67,26 @@ body{
     width: 20%;
     display: inline-block;
     background: white;
+    padding: 50px 25px;
+    border-radius: 24px;
 }
 
 .img-muneco{
-    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.resultado h2, .resultado p{
+    text-align: center;
+    margin: 50px auto;
+}
+
+.resultado h2{
+    font-weight: bold;
+}
+
+.b-copiar{
+    margin-left: 1.5em;
 }
 
 footer{
