@@ -8,6 +8,9 @@
         <title>Encriptador de texto</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -24,7 +27,7 @@
 
             <!-- Contiene el lugar donde el usuario ingresara el texto y botones encriptar y desencriptar -->
             <section class="principal">
-                <textarea class="texto-usuario" cols="60" rows="20"  placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="texto-usuario" cols="60" rows="13"  placeholder="Ingrese el texto aqui"></textarea>
                 <label class="aviso">&#128712; Solo letras minusculas y sin tildes</label>
                 <input class="b-encriptar" type="submit" value="Encriptar">
                 <input class="b-desencriptar" type="submit" value="Desencriptar">
@@ -33,8 +36,8 @@
             <!-- Contiene el resultado del texto ingresado, la imagen y el texto de no hay mensaje en caso de no haber ningun mensaje -->
             <section class="resultado">
                 <img src="imagenes/Muneco.png" class="img-muneco">
-                <label>Ningun mensaje fue encontrado</label>
-                <label>Ingresa el texto que desea encriptar o desencriptar</label>
+                <h2>Ningun mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desea encriptar o desencriptar</p>
             </section>
 
         </main>
