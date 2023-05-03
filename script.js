@@ -1,4 +1,3 @@
-let muneco = "img-muneco";
 let boton_copiar = "b-copiar";
 let encriptado = false;
 let boton_encriptar = document.getElementById("b-encriptar");
@@ -40,8 +39,13 @@ function encriptar(){
         }
         textaux += texto[i];
     }
-    alert(textaux);
+    // alert(textaux);
     document.getElementById("texto-usuario").value = ""; //Borra el contenido ingresado por el usuario del textarea
+
+    document.getElementById("texto-encriptado").style.display = "block"; //Hace visible el textarea 
+    document.getElementById("texto-encriptado").value = textaux; //Agrega el texto encriptado
+
+    mostrar(boton_copiar);
 }
 
 // conecta el boton para encriptar al codigo anterior
