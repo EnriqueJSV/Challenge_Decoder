@@ -52,4 +52,3 @@ function encriptar(){
 
 // conecta el boton para encriptar al codigo anterior
 boton_encriptar.onclick = encriptar;
-
