@@ -3,14 +3,17 @@ let boton_copiar = "b-copiar";
 let encriptado = false;
 let boton_encriptar = document.getElementById("b-encriptar");
 
+// oculta el elemento que se desea
 function ocultar(elemento){
     document.getElementById(elemento).style.visibility = 'hidden';
 }
 
+//muestra algun elemento oculto
 function mostrar(elemento){
     document.getElementById(elemento).style.visibility = 'visible';
 }
 
+// encripta el mensaje ingresado por el usuario
 function encriptar(){
     let texto = document.getElementById("texto-usuario").value;
     let textaux = "";
@@ -38,12 +41,14 @@ function encriptar(){
         textaux += texto[i];
     }
     alert(textaux);
-    document.getElementById("texto-usuario").value = "";
+    document.getElementById("texto-usuario").value = ""; //Borra el contenido ingresado por el usuario del textarea
 }
 
+// conecta el boton para encriptar al codigo anterior
 boton_encriptar.onclick = encriptar;
 
-if (encriptado){
-    ocultar(muneco);
+// si no se ha encriptado ningun mensaje va a ocultar el boton de copiar, caso contrario oculta la imagen y muestra el texto encriptado
+if (!encriptado){
+    ocultar(boton_copiar);
 }
 
