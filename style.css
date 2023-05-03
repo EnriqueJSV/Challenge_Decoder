@@ -25,9 +25,10 @@ body{
 }
 
 /* Esto quita el borde cuando el text area es seleccinado */
-/* .texto-usuario:focus{
+.texto-usuario:focus{
     outline: none;
-} */
+    color: #0A3871;
+}
 
 .texto-usuario::placeholder{
     color: #0A3871;
@@ -69,6 +70,7 @@ body{
     background: white;
     padding: 50px 25px;
     border-radius: 24px;
+    position: absolute;
 }
 
 .img-muneco{
