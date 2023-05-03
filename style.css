@@ -51,6 +51,8 @@ body{
     border-color: #0A3871;
     margin: 1em 12px 0 0;
     font-size: 16px;
+    transition: 0.5s all;
+    cursor: pointer;
 }
 
 .b-encriptar{
@@ -61,8 +63,12 @@ body{
 .b-desencriptar{
     background: #D8DFE8;
     color: #0A3871;
-    
 }
+
+.b-encriptar:hover, .b-desencriptar:hover, .b-copiar:hover{
+    transform: scale(1.05);
+}
+
 
 .resultado{
     width: 20%;
