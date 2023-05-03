@@ -13,7 +13,31 @@ function mostrar(elemento){
 
 function encriptar(){
     let texto = document.getElementById("texto-usuario").value;
-    alert(texto);
+    let textaux = "";
+    for(let i = 0; i < texto.length; i++){
+        if(texto[i] == "a"){
+            textaux += "ai";
+            continue;
+        } 
+        else if(texto[i] == "e"){
+            textaux += "enter";
+            continue;
+        }
+        else if(texto[i] == "i"){
+            textaux += "imes";
+            continue;
+        }
+        else if(texto[i] == "o"){
+            textaux += "ober";
+            continue;
+        }
+        else if(texto[i] == "u"){
+            textaux += "ufat";
+            continue;
+        }
+        textaux += texto[i];
+    }
+    alert(textaux);
     document.getElementById("texto-usuario").value = "";
 }
 
