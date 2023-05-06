@@ -29,8 +29,8 @@
             <section class="principal">
                 <textarea class="texto-usuario" id="texto-usuario" cols="50" rows="13"  placeholder="Ingrese el texto aqui"></textarea>
                 <label class="aviso">&#128712; Solo letras minusculas y sin tildes</label>
-                <input class="b-encriptar" id="b-encriptar" type="button" value="Encriptar">
-                <input class="b-desencriptar" id="b-desencriptar" type="button" value="Desencriptar">
+                <button class="b-encriptar" onclick="btn_encriptado()">Encriptar</button>
+                <button class="b-desencriptar" onclick="btn_desencriptado()">Desencriptar</button>
             </section>
 
             <!-- Contiene el resultado del texto ingresado, la imagen y el texto de no hay mensaje en caso de no haber ningun mensaje -->
@@ -39,7 +39,7 @@
                 <img class="img-muneco" id="img-muneco" src="imagenes/Muneco.png">
                 <h2 class="aviso-no-mensaje">Ningun mensaje fue encontrado</h2>
                 <p class="texto-encriptar">Ingresa el texto que desea encriptar o desencriptar</p>
-                <input class="b-copiar" id="b-copiar" type="button" value="Copiar">
+                <button class="b-copiar" id="b-copiar">Copiar</button>
             </section>
 
         </main>

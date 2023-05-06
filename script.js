@@ -1,6 +1,6 @@
-let boton_copiar = "b-copiar";
-let encriptado = false;
-let boton_encriptar = document.getElementById("b-encriptar");
+const boton_copiar = "b-copiar";
+const texto_usuario = document.querySelector('.texto-usuario');
+const texto_encriptado = document.querySelector('.texto-encriptado');
 
 // oculta el elemento que se desea
 function ocultar(elemento){
@@ -14,41 +14,40 @@ function mostrar(elemento){
 
 ocultar(boton_copiar);
 
-// encripta el mensaje ingresado por el usuario
-function encriptar(){
-    let texto = document.getElementById("texto-usuario").value;
-    let textaux = "";
-    for(let i = 0; i < texto.length; i++){
-        if(texto[i] == "a"){
-            textaux += "ai";
-            continue;
-        } 
-        else if(texto[i] == "e"){
-            textaux += "enter";
-            continue;
-        }
-        else if(texto[i] == "i"){
-            textaux += "imes";
-            continue;
-        }
-        else if(texto[i] == "o"){
-            textaux += "ober";
-            continue;
-        }
-        else if(texto[i] == "u"){
-            textaux += "ufat";
-            continue;
-        }
-        textaux += texto[i];
-    }
-    // alert(textaux);
-    document.getElementById("texto-usuario").value = ""; //Borra el contenido ingresado por el usuario del textarea
-
-    document.getElementById("texto-encriptado").style.display = "block"; //Hace visible el textarea 
-    document.getElementById("texto-encriptado").value = textaux; //Agrega el texto encriptado
-
+function btn_encriptado(){
+    document.getElementById("texto-encriptado").style.display = "block";
+    const encriptado = encriptar(texto_usuario.value);
+    texto_encriptado.value = encriptado;
     mostrar(boton_copiar);
+    texto_usuario.value = "";
 }
 
-// conecta el boton para encriptar al codigo anterior
-boton_encriptar.onclick = encriptar;
+function encriptar(textoEncriptado){
+    let matriz_cambio = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    textoEncriptado = textoEncriptado.toLowerCase();
+    for(let i = 0; i < matriz_cambio.length; i++){
+        if(textoEncriptado.includes(matriz_cambio[i][0])){
+            textoEncriptado = textoEncriptado.replaceAll(matriz_cambio[i][0],matriz_cambio[i][1]);
+        }
+    }
+    return textoEncriptado;
+}
+
+function btn_desencriptado(){
+    document.getElementById("texto-encriptado").style.display = "block";
+    const desencriptado = desencriptar(texto_usuario.value);
+    texto_encriptado.value = desencriptado;
+    mostrar(boton_copiar);
+    texto_usuario.value = "";
+}
+
+function desencriptar(textoEncriptado){
+    let matriz_cambio = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    textoEncriptado = textoEncriptado.toLowerCase();
+    for(let i = 0; i < matriz_cambio.length; i++){
+        if(textoEncriptado.includes(matriz_cambio[i][1])){
+            textoEncriptado = textoEncriptado.replaceAll(matriz_cambio[i][1],matriz_cambio[i][0]);
+        }
+    }
+    return textoEncriptado;
+}
