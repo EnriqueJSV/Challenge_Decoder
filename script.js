@@ -1,6 +1,7 @@
 const boton_copiar = "b-copiar";
 const texto_usuario = document.querySelector('.texto-usuario');
 const texto_encriptado = document.querySelector('.texto-encriptado');
+const avisos = document.querySelector('.avisos');
 
 // oculta el elemento que se desea
 function ocultar(elemento){
@@ -20,6 +21,8 @@ function btn_encriptado(){
     texto_encriptado.value = encriptado;
     mostrar(boton_copiar);
     texto_usuario.value = "";
+    texto_encriptado.style.backgroundImage = "none";
+    avisos.style.visibility = "hidden";
 }
 
 function encriptar(textoEncriptado){
@@ -39,6 +42,8 @@ function btn_desencriptado(){
     texto_encriptado.value = desencriptado;
     mostrar(boton_copiar);
     texto_usuario.value = "";
+    texto_encriptado.style.backgroundImage = "none";
+    avisos.style.visibility = "hidden";
 }
 
 function desencriptar(textoEncriptado){

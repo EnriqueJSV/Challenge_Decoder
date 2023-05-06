@@ -80,8 +80,8 @@ body{
 }
 
 .texto-encriptado{
-    position: absolute;
-    display: none;
+    background-image: url(imagenes/Muneco.png);
+    background-repeat: no-repeat;
     max-width: 370px;
     max-height: 520px;
     width: 100%;
@@ -109,9 +109,14 @@ body{
     margin-bottom: 50px;
 }
 
+.avisos{
+    text-align: center;
+    margin-top: 25px;
+}
+
 .resultado h2, .resultado p{
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .resultado h2{
