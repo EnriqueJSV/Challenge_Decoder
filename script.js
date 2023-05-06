@@ -51,3 +51,12 @@ function desencriptar(textoEncriptado){
     }
     return textoEncriptado;
 }
+
+function copiar(){
+    let copytext = texto_encriptado.value;
+    copiar_portapapeles(copytext);
+}
+
+function copiar_portapapeles(texto){
+    navigator.clipboard.writeText(texto);
+}
