@@ -27,15 +27,17 @@
 
             <!-- Contiene el lugar donde el usuario ingresara el texto y botones encriptar y desencriptar -->
             <section class="principal">
-                <textarea class="texto-usuario" id="texto-usuario" cols="50" rows="13"  placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="texto-usuario" id="texto-usuario" placeholder="Ingrese el texto aqui"></textarea>
                 <label class="aviso">&#128712; Solo letras minusculas y sin tildes</label>
-                <button class="b-encriptar" onclick="btn_encriptado()">Encriptar</button>
-                <button class="b-desencriptar" onclick="btn_desencriptado()">Desencriptar</button>
+                <div class="botones_encrip">
+                    <button class="b-encriptar" onclick="btn_encriptado()">Encriptar</button>
+                    <button class="b-desencriptar" onclick="btn_desencriptado()">Desencriptar</button>
+                </div>
             </section>
 
             <!-- Contiene el resultado del texto ingresado, la imagen y el texto de no hay mensaje en caso de no haber ningun mensaje -->
             <section class="resultado">
-                <textarea class="texto-encriptado" id="texto-encriptado" cols="20" rows="20"></textarea>
+                <textarea class="texto-encriptado" id="texto-encriptado"></textarea>
                 <div class="avisos">
                     <h2 class="aviso-no-mensaje">Ningun mensaje fue encontrado</h2>
                     <p class="texto-encriptar">Ingresa el texto que desea encriptar o desencriptar</p>
